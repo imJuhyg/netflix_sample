@@ -7,10 +7,7 @@ export default function Nav() {
         /* 컴포넌트가 화면에 나타났을때, 업데이트 될 때
             (Mount, Update)
         */
-        console.log("(Mount/Update)Nav Component");
-
         window.addEventListener("scroll", () => {
-            console.log("window.scrollY",window.scrollY);
             if (window.scrollY > 50) {
                 setShow(true);
             } else {
@@ -22,7 +19,6 @@ export default function Nav() {
             /* 컴포넌트가 화면에서 사라졌을 때
                 (Unmount)
             */
-            console.log("(Unmount)Nav Component");
             window.removeEventListener("scroll", () => {});
         }
     }, []);
