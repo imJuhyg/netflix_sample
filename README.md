@@ -1,70 +1,13 @@
-# Getting Started with Create React App
+## Row.css
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### slider / slider__arrow-left
+* <b>slider</b>  
+<b>position: relative</b>  
+position: relative의 용도는 자신 요소의 현재 위치를 기준으로 상대 위치를 지정하여 배치하기 위해 사용한다.  
+css속성 중 top, left, right, bottom. z-index 속성들은 position이 static인 상태(position의 기본값)에서는 지정해도 위치가 변하지 않는데, relative 또는 fixed 상태일 때 해당 속성들의 기준점에서 얼마만큼 떨어진 위치를 지정할 수가 있다.  
+relative의 기준점은 자기 자신 요소이며, fixed의 기준점은 브라우저 화면(윈도우)기준이다.   
+  
+* <b>slider__arrow-left</b>  
+<b>position: absolute</b>    
+absolute 속성의 기준점은 상위 요소의 배치 기준으로 설정된다. 상위 요소가 position: static이 아닌 첫 번째 상위 요소의 배치 기준을 기준점으로 잡지만, 그러한 요소가 없다면 DOM트리 최상위에 있는 body요소가 배치 기준이 된다. 보통의 사용 용도는 부모 요소를 기준점으로 잡아 top, left, right, bottom을 설정하기 위함이다.  
+즉, 부모 요소인 slider의 relative 속성은 자식 요소의 기준점을 같도록 하기 위해 설정했다고 볼 수 있다.
