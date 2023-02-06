@@ -1,6 +1,12 @@
+# HTML
+## slide
+* <b>document.getElementById('id').scrollLeft</b>  
+scrollLeft는 페이지의 가로 스크롤 위치를 구하거나, 설정할 수 있다. 처음 상태에서는 scrollLeft가 0이며, 오른쪽으로 일정 부분 스크롤했을 때 그 만큼 픽셀이 늘어난다. scrollLeft를 set할 때 컨텐츠의 최대 길이를 벗어나게 설정해도 바깥 영역으로 벗어나지 않는다. 
+* <b>window.innerWidth</b>  
+window.innerWidth는 현재 보여지는 페이지의 가로 길이에 해당한다. 즉, 엘리먼트의 scrollLeft 값에서 innerWidth만큼 더하면 컨텐츠의 다음 영역까지 보여줄 수 있도록 표시할 수 있다.
+
 # CSS
-## Row.css
-### animation css
+## animation css
 * <b>transition</b>  
 transition속성은 애니메이션의 속도를 조절하는 용도로 사용된다. 만약 css의 배경값을 흰색에서 검정색으로 변경하고자 할 경우 트랜지션을 설정해주지 않으면 변화가 즉시 일어난다.  
 트랜지션은 딜레이를 설정하여 언제 애니메이션을 시작할지, 트랜지션 대상 CSS 프로퍼티는 어떤 것인지, 트랜지션을 얼마나 지속할지,   
@@ -35,7 +41,7 @@ skewX(30deg) - 가로 방향으로 30도 비튼다.
 skewY(30deg) - 세로 방향으로 30도 비튼다.  
 skew(30deg, 60deg) - 가로 방향 30도, 세로 방향 60도로 비튼다.   
   
-### slider / slider__arrow-left
+## slider / slider__arrow-left
 * <b>slider</b>  
 <b>position: relative</b>  
 position: relative의 용도는 자신 요소의 현재 위치를 기준으로 상대 위치를 지정하여 배치하기 위해 사용한다.  
