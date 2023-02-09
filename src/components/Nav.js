@@ -38,7 +38,7 @@ export default function Nav() {
                 alt='Netlix logo'
                 src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg"
                 className="nav__logo"
-                onClick={() => window.location.reload()}
+                onClick={() => navigate('/')}
             />
 
             <input value={searchValue} onChange={handleChange} className="nav__input" type="text" placeholder="영화를 검색해주세요." />
